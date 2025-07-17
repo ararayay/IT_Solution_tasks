@@ -1,0 +1,60 @@
+/* style.css */
+
+body {
+  font-family: Arial;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  font-size: 28px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+main {
+  max-width: 900px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+/* home.html */
+a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* last_deals.html */
+.deals-header {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.deals-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.deals-table thead {
+  background-color: #f0f0f0;
+}
+
+.deals-table th,
+.deals-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.deals-table th {
+  font-weight: bold;
+}
+
+.deals-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
