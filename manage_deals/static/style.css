@@ -1,5 +1,3 @@
-/* style.css */
-
 body {
   font-family: Arial;
   color: #333;
@@ -13,17 +11,32 @@ header {
 }
 
 main {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 10px auto;
   padding: 20px;
 }
 
 /* home.html */
-a {
-  color: #3498db;
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: white;
   text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #2980b9;
 }
 
 /* last_deals.html */
@@ -57,4 +70,47 @@ a {
 
 .deals-table tr:nth-child(even) {
   background-color: #f9f9f9;
+}
+
+/* add_deal.html */
+.create-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.create-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.create-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
 }

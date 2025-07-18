@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <a href="{% url 'last_deals' %}">Сделки</a>
+  <div class="menu">
+    <a href="{% url 'last_deals' %}">Последние сделки</a>
+    <a href="{% url 'add_deal' %}">Добавить сделку</a>
+  </div>
 {% endblock %}

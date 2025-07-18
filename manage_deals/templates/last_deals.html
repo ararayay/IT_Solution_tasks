@@ -2,7 +2,7 @@
 
 {% block content %}
   <div class="deals-header">
-    <p>10 ваших последних сделок:</p>
+    <p>10 ваших последних активных сделок:</p>
   </div>
 
   <table class="deals-table">
@@ -11,8 +11,9 @@
         <th>Название</th>
         <th>Стадия</th>
         <th>Сумма</th>
+        <th>Дата создания</th>
         <th>Дата начала</th>
-        <th>Дата закрытия</th>
+        <th>Вероятность закрытия в срок</th>
       </tr>
     </thead>
     <tbody>
@@ -21,8 +22,9 @@
           <td>{{ deal.TITLE }}</td>
           <td>{{ deal.STAGE_ID }}</td>
           <td>{{ deal.OPPORTUNITY }}</td>
+          <td>{{ deal.DATE_CREATE }}</td>
           <td>{{ deal.BEGINDATE }}</td>
-          <td>{{ deal.CLOSEDATE }}</td>
+          <td>{{ deal.UF_CRM_1752828792635 }}</td>
         </tr>
       {% endfor %}
     </tbody>
